@@ -5,7 +5,9 @@ const MainPage = () => {
 
     return (
         <div>
+            Привет
             {t('Главная страница')}
+
         </div>
     );
 };
