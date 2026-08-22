@@ -29,5 +29,14 @@ jobs:
         run: npm run test:unit
       - name: build storybook
         run: npm run storybook:build
+      - name: Check Docker
+        run: |
+          docker version
+          docker info
+          docker run --rm hello-world
+      - name: Check Loki Chrome image
+        run: |
+          docker pull yukinying/chrome-headless-browser:90.0.4408.0
+          docker run --rm yukinying/chrome-headless-browser:90.0.4408.0 --version
       - name: screenshot testing
         run: npm run test:ui:ci
