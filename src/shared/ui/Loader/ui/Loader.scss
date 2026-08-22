@@ -1,18 +1,15 @@
 .lds-roller {
     color: var(--primary-color);
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
 }
 
 .lds-roller,
 .lds-roller div,
 .lds-roller div::after {
     box-sizing: border-box;
-}
-
-.lds-roller {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
 }
 
 .lds-roller div {
@@ -36,8 +33,8 @@
 }
 
 .lds-roller div:nth-child(1)::after {
-    top: 62.62742px;
-    left: 62.62742px;
+    top: 62.6274px;
+    left: 62.6274px;
 }
 
 .lds-roller div:nth-child(2) {
@@ -45,7 +42,7 @@
 }
 
 .lds-roller div:nth-child(2)::after {
-    top: 67.71281px;
+    top: 67.7128px;
     left: 56px;
 }
 
@@ -54,8 +51,8 @@
 }
 
 .lds-roller div:nth-child(3)::after {
-    top: 70.90963px;
-    left: 48.28221px;
+    top: 70.9096px;
+    left: 48.2822px;
 }
 
 .lds-roller div:nth-child(4) {
@@ -72,8 +69,8 @@
 }
 
 .lds-roller div:nth-child(5)::after {
-    top: 70.90963px;
-    left: 31.71779px;
+    top: 70.9096px;
+    left: 31.7178px;
 }
 
 .lds-roller div:nth-child(6) {
@@ -81,7 +78,7 @@
 }
 
 .lds-roller div:nth-child(6)::after {
-    top: 67.71281px;
+    top: 67.7128px;
     left: 24px;
 }
 
@@ -90,8 +87,8 @@
 }
 
 .lds-roller div:nth-child(7)::after {
-    top: 62.62742px;
-    left: 17.37258px;
+    top: 62.6274px;
+    left: 17.3726px;
 }
 
 .lds-roller div:nth-child(8) {
@@ -100,7 +97,7 @@
 
 .lds-roller div:nth-child(8)::after {
     top: 56px;
-    left: 12.28719px;
+    left: 12.2872px;
 }
 
 @keyframes lds-roller {
