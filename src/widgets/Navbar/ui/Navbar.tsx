@@ -4,7 +4,6 @@ import { Modal } from 'shared/ui/Modal/Modal';
 import { Button } from 'shared/ui/Button';
 import { ButtonTheme } from 'shared/ui/Button/ui/Button';
 import { useCallback, useState } from 'react';
-import { useTheme } from 'app/providers/ThemeProvider';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -35,7 +34,7 @@ export const Navbar = ({ className }: NavbarProps) => {
                 onClose={onToggleModal}
             >
                 {/* eslint-disable-next-line i18next/no-literal-string,max-len */}
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at atque consectetur, et eveniet fugit iusto nihil officia quam repudiandae.
+                {t('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at atque consectetur, et eveniet fugit iusto nihil officia quam repudiandae.')}
             </Modal>
 
         </div>

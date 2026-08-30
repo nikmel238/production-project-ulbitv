@@ -8,5 +8,10 @@
   "Главная": "Main",
   "Переключить": "Switch",
   "Короткий язык": "RU",
-  "Войти": "Login"
+  "Войти": "Login",
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+    " Assumenda at atque consectetur, et eveniet fugit iusto nihil officia quam repudiandae": {
+      "": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at atque consectetur, et eveniet fugit iusto nihil officia quam repudiandae."
+    }
+  }
 }
