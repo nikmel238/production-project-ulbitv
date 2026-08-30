@@ -13,5 +13,7 @@
     " Assumenda at atque consectetur, et eveniet fugit iusto nihil officia quam repudiandae": {
       "": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at atque consectetur, et eveniet fugit iusto nihil officia quam repudiandae."
     }
-  }
+  },
+  "increment": "Увеличить",
+  "decrement": "Уменьшить"
 }
