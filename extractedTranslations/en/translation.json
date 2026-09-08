@@ -4,6 +4,8 @@
       "": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at atque consectetur, et eveniet fugit iusto nihil officia quam repudiandae."
     }
   },
+  "decrement": "decrement",
+  "increment": "increment",
   "Войти": "Войти",
   "Главная": "Главная",
   "О сайте": "О сайте",
@@ -11,7 +13,5 @@
   "Переключить": "Переключить",
   "Произошла непредвиденная ошибка": "",
   "Страница не найдена": "",
-  "Язык": "",
-  "increment": "increment",
-  "decrement": "decrement"
+  "Язык": ""
 }
