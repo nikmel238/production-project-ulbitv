@@ -15,5 +15,7 @@
     }
   },
   "increment": "increment",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  "Логин": "Логин",
+  "Пароль": "Пароль"
 }
