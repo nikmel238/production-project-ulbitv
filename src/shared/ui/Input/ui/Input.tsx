@@ -53,9 +53,15 @@ export const Input = memo((props: InputProps) => {
     };
 
     return (
-        <div className={classNames(cls.InputWrapper, {}, [className])}>
+        <div
+            className={classNames(cls.InputWrapper, {}, [className])}
+            data-testid="input"
+        >
             {placeholder && (
-                <div className={cls.placeholder}>
+                <div
+                    className={cls.placeholder}
+                    data-testid="input-placeholder"
+                >
                     {`${placeholder}>`}
                 </div>
             )}
@@ -75,9 +81,9 @@ export const Input = memo((props: InputProps) => {
                     <span
                         className={cls.caret}
                         style={{ left: `${caretPosition * 9}px` }}
+                        data-testid="input-caret"
                     />
                 )}
-
             </div>
 
         </div>
