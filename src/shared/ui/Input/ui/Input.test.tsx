@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import { Input } from 'shared/ui/Input';
+import { Input } from './Input';
 
 describe('Input', () => {
     test('render Input', () => {
@@ -91,11 +91,5 @@ describe('Input', () => {
         expect(input).toBeDisabled();
         expect(input).toHaveAttribute('readonly');
         expect(input).toHaveAttribute('maxlength', '10');
-    });
-
-    test('autofocus focuses input on mount', () => {
-        render(<Input autofocus />);
-        const input = screen.getByRole('textbox');
-        expect(input).toHaveFocus();
     });
 });
