@@ -1,19 +1,7 @@
 {
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
-    " Assumenda at atque consectetur, et eveniet fugit iusto nihil officia quam repudiandae": {
-      "": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at atque consectetur, et eveniet fugit iusto nihil officia quam repudiandae."
-    }
-  },
-  "decrement": "decrement",
-  "increment": "increment",
-  "Войти": "Войти",
-  "Главная": "Главная",
-  "Логин": "Логин",
-  "О сайте": "О сайте",
-  "Обновить страницу": "",
-  "Пароль": "Пароль",
-  "Переключить": "Переключить",
-  "Произошла непредвиденная ошибка": "",
-  "Страница не найдена": "",
-  "Язык": ""
+  "Войти": "",
+  "Главная": "",
+  "Логин": "",
+  "О сайте": "",
+  "Пароль": ""
 }
