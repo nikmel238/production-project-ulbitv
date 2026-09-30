@@ -5,7 +5,7 @@ import { LangSwitcher } from 'shared/ui/LangSwitcher';
 import { Button } from 'shared/ui/Button';
 import { useTranslation } from 'react-i18next';
 import { ButtonSize, ButtonTheme } from 'shared/ui/Button/ui/Button';
-import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
+import { AppLink, AppLinkTheme } from 'shared/ui/AppLink';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import AboutIcon from 'shared/assets/icons/about-20.svg';
 import MainIcon from 'shared/assets/icons/main-20.svg';

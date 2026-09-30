@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Button } from 'shared/ui/Button';
 import { Input } from 'shared/ui/Input';
+import { ButtonTheme } from 'shared/ui/Button/ui/Button';
 import cls from './LoginForm.module.scss';
 
 interface LoginFormProps {
@@ -29,7 +30,10 @@ export const LoginForm = (props: LoginFormProps) => {
                 type="password"
                 placeholder={t('Пароль')}
             />
-            <Button className={cls.loginBtn}>
+            <Button
+                className={cls.loginBtn}
+                theme={ButtonTheme.OUTLINE}
+            >
                 {t('Войти')}
             </Button>
         </div>
