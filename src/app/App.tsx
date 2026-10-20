@@ -3,11 +3,11 @@ import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 import { Suspense } from 'react';
-import { PageLoader } from 'shared/ui/PageLoader';
+import { LoaderPage } from 'pages/LoaderPage';
 
 const App = () => (
     <div className={classNames('app', {}, [])}>
-        <Suspense fallback={<PageLoader />}>
+        <Suspense fallback={<LoaderPage />}>
             <Navbar />
 
             <div className="content-page">
