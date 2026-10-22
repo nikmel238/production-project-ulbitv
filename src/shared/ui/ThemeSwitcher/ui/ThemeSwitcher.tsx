@@ -19,8 +19,8 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
             data-testid="theme-switcher"
         >
             {theme === Theme.LIGHT
-                ? <span data-testid="icon-light">{ThemeLight}</span>
-                : <span data-testid="icon-dark">{ThemeDark}</span>}
+                ? <span data-testid="icon-light"><ThemeLight /></span>
+                : <span data-testid="icon-dark"><ThemeDark /></span>}
         </Button>
     );
 };
