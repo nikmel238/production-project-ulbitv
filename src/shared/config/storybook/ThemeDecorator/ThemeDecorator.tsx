@@ -31,3 +31,9 @@ export const withDarkTheme = (Story: Story) => (
         <Story />
     </ThemeDecorator>
 );
+
+export const withLightTheme = (Story: Story) => (
+    <ThemeDecorator theme={Theme.LIGHT}>
+        <Story />
+    </ThemeDecorator>
+);
