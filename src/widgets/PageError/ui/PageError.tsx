@@ -2,6 +2,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { Button, ButtonTheme } from 'shared/ui/Button';
 import cls from './PageError.module.scss';
+import { reloadPage } from './reloadPage';
 
 interface ErrorPageProps {
   className?: string;
@@ -10,12 +11,11 @@ interface ErrorPageProps {
 export const PageError = ({ className }: ErrorPageProps) => {
     const { t } = useTranslation();
 
-    const reloadPage = () => {
-    // eslint-disable-next-line no-restricted-globals
-        location.reload();
-    };
     return (
-        <div className={classNames(cls.PageError, {}, [className])}>
+        <div
+            className={classNames(cls.PageError, {}, [className])}
+            data-testid="page-error"
+        >
             <p>{t('Произошла непредвиденная ошибка')}</p>
             <Button
                 onClick={reloadPage}
