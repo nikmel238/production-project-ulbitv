@@ -17,7 +17,10 @@ export const LoginForm = (props: LoginFormProps) => {
     const { t } = useTranslation();
 
     return (
-        <div className={classNames(cls.LoginForm, {}, [className])}>
+        <div
+            className={classNames(cls.LoginForm, {}, [className])}
+            data-testid="login-form"
+        >
             <Input
                 className={cls.input}
                 type="text"

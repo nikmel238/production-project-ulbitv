@@ -16,6 +16,6 @@
   },
   "increment": "increment",
   "decrement": "decrement",
-  "Логин": "Логин",
-  "Пароль": "Пароль"
+  "Логин": "Login",
+  "Пароль": "Password"
 }
