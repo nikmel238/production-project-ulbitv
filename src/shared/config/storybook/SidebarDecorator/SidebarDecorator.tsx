@@ -1,5 +1,5 @@
 import React from 'react';
-import cls from 'widgets/Sidebar/ui/Sidebar/Sidebar.module.scss';
+import cls from 'widgets/Sidebar/ui/Sidebar.module.scss';
 import { Story } from '@storybook/react';
 
 export const withSidebar = (Story: Story) => (
