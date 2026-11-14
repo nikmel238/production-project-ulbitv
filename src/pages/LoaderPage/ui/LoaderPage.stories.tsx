@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { withDarkTheme } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { withDarkTheme, withLightTheme } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { LoaderPage } from './LoaderPage';
 
 export default {
@@ -10,10 +10,8 @@ export default {
 
 const Template: ComponentStory<typeof LoaderPage> = (args) => <LoaderPage {...args} />;
 
-export const Normal = Template.bind({});
+export const Light = Template.bind({});
+Light.decorators = [withLightTheme];
 
 export const Dark = Template.bind({});
-
-Dark.decorators = [
-    withDarkTheme,
-];
+Dark.decorators = [withDarkTheme];
