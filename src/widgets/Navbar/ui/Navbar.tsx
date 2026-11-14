@@ -22,7 +22,10 @@ export const Navbar = ({ className }: NavbarProps) => {
     }, []);
 
     return (
-        <div className={classNames(cls.Navbar, {}, [className])}>
+        <div
+            className={classNames(cls.Navbar, {}, [className])}
+            data-testid="navbar"
+        >
 
             <Button
                 theme={ButtonTheme.CLEAR_INVERTED}
