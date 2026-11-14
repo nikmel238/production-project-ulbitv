@@ -22,7 +22,6 @@ export const LoginModal = (props: LoginModalProps) => {
             isOpen={isOpen}
             onClose={onClose}
             lazy
-            data-testid="login-modal"
         >
             <LoginForm />
         </Modal>

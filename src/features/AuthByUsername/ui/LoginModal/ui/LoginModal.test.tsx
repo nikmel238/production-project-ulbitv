@@ -7,7 +7,7 @@ describe('LoginModal', () => {
 
         render(<LoginModal isOpen onClose={onClose} />);
 
-        expect(screen.getByTestId('login-modal')).toBeInTheDocument();
+        expect(screen.getByTestId('modal')).toBeInTheDocument();
     });
 
     test('renders LoginModal with custom className', () => {
@@ -15,6 +15,6 @@ describe('LoginModal', () => {
 
         render(<LoginModal isOpen onClose={onClose} className="custom" />);
 
-        expect(screen.getByTestId('login-modal')).toHaveClass('custom');
+        expect(screen.getByTestId('modal')).toHaveClass('custom');
     });
 });
