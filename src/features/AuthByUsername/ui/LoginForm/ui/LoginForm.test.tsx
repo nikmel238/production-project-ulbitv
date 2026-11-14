@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { LoginForm } from 'features/AuthByUsername/ui/LoginForm';
+import { LoginForm } from './LoginForm';
 
 describe('LoginForm', () => {
     test('renders LoginForm', () => {
