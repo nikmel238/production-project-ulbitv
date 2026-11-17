@@ -11,6 +11,7 @@ export default {
         theme: { control: 'radio', options: Object.values(ButtonTheme) },
         size: { control: 'radio', options: Object.values(ButtonSize) },
         square: { control: 'boolean' },
+        disabled: { control: 'boolean' },
     },
 } as ComponentMeta<typeof Button>;
 
@@ -21,10 +22,23 @@ Primary.args = {
     children: 'Text',
 };
 
+export const PrimaryDisabled = Template.bind({});
+PrimaryDisabled.args = {
+    children: 'Text',
+    disabled: true,
+};
+
 export const Clear = Template.bind({});
 Clear.args = {
     children: 'Text',
     theme: ButtonTheme.CLEAR,
+};
+
+export const ClearDisabled = Template.bind({});
+ClearDisabled.args = {
+    children: 'Text',
+    theme: ButtonTheme.CLEAR,
+    disabled: true,
 };
 
 export const ClearInverted = Template.bind({});
@@ -33,10 +47,24 @@ ClearInverted.args = {
     theme: ButtonTheme.CLEAR_INVERTED,
 };
 
+export const ClearInvertedDisabled = Template.bind({});
+ClearInvertedDisabled.args = {
+    children: 'Text',
+    theme: ButtonTheme.CLEAR_INVERTED,
+    disabled: true,
+};
+
 export const Outline = Template.bind({});
 Outline.args = {
     children: 'Text',
     theme: ButtonTheme.OUTLINE,
+};
+
+export const OutlineDisabled = Template.bind({});
+OutlineDisabled.args = {
+    children: 'Text',
+    theme: ButtonTheme.OUTLINE,
+    disabled: true,
 };
 
 export const OutlineDark = Template.bind({});
@@ -49,16 +77,41 @@ OutlineDark.decorators = [
     withDarkTheme,
 ];
 
+export const OutlineDarkDisabled = Template.bind({});
+OutlineDarkDisabled.args = {
+    children: 'Text',
+    theme: ButtonTheme.OUTLINE,
+    disabled: true,
+};
+
+OutlineDarkDisabled.decorators = [
+    withDarkTheme,
+];
+
 export const BackgroundTheme = Template.bind({});
 BackgroundTheme.args = {
     children: 'Text',
     theme: ButtonTheme.BACKGROUND,
 };
 
+export const BackgroundThemeDisabled = Template.bind({});
+BackgroundThemeDisabled.args = {
+    children: 'Text',
+    theme: ButtonTheme.BACKGROUND,
+    disabled: true,
+};
+
 export const BackgroundInvertedTheme = Template.bind({});
 BackgroundInvertedTheme.args = {
     children: 'Text',
     theme: ButtonTheme.BACKGROUND_INVERTED,
+};
+
+export const BackgroundInvertedThemeDisabled = Template.bind({});
+BackgroundInvertedThemeDisabled.args = {
+    children: 'Text',
+    theme: ButtonTheme.BACKGROUND_INVERTED,
+    disabled: true,
 };
 
 export const Square = Template.bind({});
