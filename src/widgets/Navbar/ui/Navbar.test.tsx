@@ -1,9 +1,10 @@
 import { fireEvent, render, screen } from '@testing-library/react';
+import { componentRender } from 'shared/lib/tests/componentRender/componentRender';
 import { Navbar } from './Navbar';
 
 describe('Navbar component', () => {
     test('renders Navbar', () => {
-        render(
+        componentRender(
             <Navbar />,
         );
 
@@ -11,7 +12,7 @@ describe('Navbar component', () => {
     });
 
     test('renders Navbar with custom className', () => {
-        render(
+        componentRender(
             <Navbar className="custom" />,
         );
 
@@ -19,7 +20,7 @@ describe('Navbar component', () => {
     });
 
     test('opens LoginModal after clicking the login button', () => {
-        render(<Navbar />);
+        componentRender(<Navbar />);
 
         expect(screen.queryByTestId('login-form')).not.toBeInTheDocument();
 

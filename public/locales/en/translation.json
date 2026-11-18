@@ -17,5 +17,8 @@
   "increment": "increment",
   "decrement": "decrement",
   "Логин": "Login",
-  "Пароль": "Password"
+  "Пароль": "Password",
+  "Форма авторизации": "Authorization form",
+  "Неверный логин или пароль": "Invalid login or password",
+  "Выйти": "Exit"
 }

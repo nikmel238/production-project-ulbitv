@@ -1,9 +1,10 @@
 import { render, screen } from '@testing-library/react';
+import { componentRender } from 'shared/lib/tests/componentRender/componentRender';
 import { LoginForm } from './LoginForm';
 
 describe('LoginForm', () => {
     test('renders LoginForm', () => {
-        render(
+        componentRender(
             <LoginForm />,
         );
 
@@ -17,7 +18,7 @@ describe('LoginForm', () => {
     });
 
     test('renders LoginForm with custom className', () => {
-        render(
+        componentRender(
             <LoginForm className="custom" />,
         );
 
@@ -25,7 +26,7 @@ describe('LoginForm', () => {
     });
 
     test('focuses login input on mount', () => {
-        render(<LoginForm />);
+        componentRender(<LoginForm />);
         const inputs = document.querySelectorAll('input');
 
         expect(inputs[0]).toHaveFocus();
